@@ -15,15 +15,7 @@ jobs:
     steps:
       - checkout
       - run: ./gradlew clean build
-
-    test:
-      steps:
-      - run:
-          name: Run tests
-          command: ./gradlew test --info
-
-      - store_test_results:
-          path: build/test-results/test
+      - run: ./gradlew test --info
 
 # Invoke jobs via workflows
 workflows:
