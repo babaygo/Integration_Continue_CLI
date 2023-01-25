@@ -12,9 +12,12 @@ jobs:
       - image: cimg/openjdk:19.0.1
     # Add steps to the job
     # See: https://circleci.com/docs/2.0/configuration-reference/#steps
+    environment:
+      gradle: circleci/gradle@3.0.0
+      
     steps:
       - checkout
-      - run: java -cp
+      - run: ./gradle build
       - store_test_results:
           path: build/test-results
 
