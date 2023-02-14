@@ -31,6 +31,7 @@ jobs:
           name: fast-forward
           command: |
             git checkout main
+            git reset
             git commit -m "ON SUCCESS"
             git merge dev
           when: on_success
@@ -39,6 +40,7 @@ jobs:
           name: rejected
           command: |
             git checkout rejected
+            git reset
             git commit -m "ON FAIL"
             git push
           when: on_fail
