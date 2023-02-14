@@ -33,6 +33,13 @@ jobs:
             git checkout main
             git merge dev
           when: on_success
+
+      - run: 
+          name: reject
+          command: |
+            git checkout -b reject
+            git commit -m "ON FAIL"
+          when: on_fail
           
 
 # Invoke jobs via workflows
