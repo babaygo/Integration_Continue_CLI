@@ -38,8 +38,7 @@ jobs:
           name: reject
           command: |
             git checkout reject
-            git commit -m "ON FAIL"
-            git push
+            git merge dev
           when: on_fail
           
 
