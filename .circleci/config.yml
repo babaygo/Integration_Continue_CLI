@@ -34,8 +34,8 @@ jobs:
             git config --global user.email "simon.laurent@epsi.fr"
             git config --global user.name "babaygo"
             git add .
-            git checkout main
             git commit -m "ON SUCCESS"
+            git checkout main
             git merge dev
           when: on_success
 
