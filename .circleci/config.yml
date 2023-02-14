@@ -37,7 +37,7 @@ jobs:
       - run: 
           name: reject
           command: |
-            git checkout -b reject
+            git checkout reject
             git commit -m "ON FAIL"
             git push
           when: on_fail
