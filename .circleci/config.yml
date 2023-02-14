@@ -24,8 +24,16 @@ jobs:
           command: mvn -B -DskipTests clean package
       # Then run your tests!
       - run:
-          name: Test
+          name: test
           command: mvn test
+      
+      - run: 
+          name: fast-forward
+          command: |
+            git checkout main
+            git merge dev
+          when: on_success
+          
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
