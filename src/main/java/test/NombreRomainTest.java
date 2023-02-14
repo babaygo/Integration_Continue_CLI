@@ -1,4 +1,4 @@
-package test;
+package main.java.test;
 
 import nombreromain.NombreRomain;
 import org.junit.jupiter.api.DisplayName;
