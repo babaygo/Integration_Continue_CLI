@@ -30,7 +30,7 @@ jobs:
       - run: 
           name: fast-forward
           command: |
-            git reset
+            git reset --hard HEAD
             git checkout main
             git commit -m "ON SUCCESS"
             git merge dev
@@ -39,7 +39,7 @@ jobs:
       - run: 
           name: rejected
           command: |
-            git reset
+            git reset --hard HEAD
             git checkout rejected
             git commit -m "ON FAIL"
             git push
