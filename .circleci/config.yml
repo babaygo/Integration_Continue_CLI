@@ -32,8 +32,6 @@ jobs:
           name: fast-forward
           command: |
             git reset --hard HEAD^
-            git config --global user.email "simon.laurent@epsi.fr"
-            git config --global user.name "babaygo"
             git add .
             git commit -m "ON SUCCESS"
             git checkout main
