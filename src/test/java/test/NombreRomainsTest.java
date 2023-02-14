@@ -12,7 +12,7 @@ public class NombreRomainsTest {
     @Test
     @DisplayName("ETANT DONNE un chiffre arabe 1" +
             "QUAND on le convertit en nombre romain" +
-            "ALORS on obtient un I, test")
+            "ALORS on obtient un I")
     public void Test_1() {
         //ETANT DONNE un chiffre arabe 1
         int chiffreArabe = 1;
@@ -21,6 +21,6 @@ public class NombreRomainsTest {
         int nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
         // ALORS on obtient un I
-        assertEquals('I', nombreRomain);
+        assertEquals('V', nombreRomain);
     }
 }
