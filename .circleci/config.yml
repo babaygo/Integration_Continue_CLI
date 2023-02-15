@@ -48,7 +48,7 @@ jobs:
             git config --global user.name "babaygo"
             git add .
             git commit -m "ON FAIL"
-            git push -u Integration_Continue_CLI rejected
+            git push -u Integration_Continue_CLI/rejected
           when: on_fail
           
 
