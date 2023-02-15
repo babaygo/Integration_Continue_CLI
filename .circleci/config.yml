@@ -45,9 +45,8 @@ jobs:
           command: |
             git reset --hard HEAD^
             git add .
-            git checkout rejected
             git commit -m "ON FAIL"
-            git push
+            git merge rejected
           when: on_fail
           
 
