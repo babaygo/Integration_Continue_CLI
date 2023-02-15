@@ -18,9 +18,9 @@ jobs:
     steps:
       # Checkout the code as the first step.
       - checkout
-      - add_ssh_keys
-          # fingerprints:
-          #   - "4b:c9:02:a6:e8:59:47:22:f9:af:d0:99:af:3e:10:46"
+      - add_ssh_keys:
+          fingerprints:
+            - "4b:c9:02:a6:e8:59:47:22:f9:af:d0:99:af:3e:10:46"
       # Use mvn clean and package as the standard maven build phase
       - run:
           name: Build
@@ -47,8 +47,9 @@ jobs:
             git config --global user.email "simon.laurent@epsi.fr"
             git config --global user.name "babaygo"
             git add .
+            git checkout rejected
             git commit -m "ON FAIL"
-            git push -u Integration_Continue_CLI/rejected
+            git push 
           when: on_fail
           
 
