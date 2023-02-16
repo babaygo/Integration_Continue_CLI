@@ -47,6 +47,7 @@ jobs:
             git config --global user.email "simon.laurent@epsi.fr"
             git config --global user.name "babaygo"
             git add .
+            git checkout -b rejected_${CIRCLE_BUILD_NUM}
             git commit -m "ON FAIL"
             git merge origin/rejected 
           when: on_fail
