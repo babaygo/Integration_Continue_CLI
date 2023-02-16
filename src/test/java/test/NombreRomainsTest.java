@@ -296,4 +296,49 @@ public class NombreRomainsTest {
         assertEquals("CC", nombreRomain);
         
     }
+    @Test
+    public void Test250() {
+        // ETANT DONNE le chiffre 250
+        int chiffreArabe =250;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("CCL", nombreRomain);
+        
+    }
+    @Test
+    public void Test400() {
+        // ETANT DONNE le chiffre 400
+        int chiffreArabe =400;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("CD", nombreRomain);
+        
+    }
+    @Test
+    public void Test499() {
+        // ETANT DONNE le chiffre 499
+        int chiffreArabe =499;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("CDXCIX", nombreRomain);
+    }
+
+    @Test
+    public void Test500() {
+        // ETANT DONNE le chiffre 500
+        int chiffreArabe =500;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("D", nombreRomain);
+    }
+
+    @Test
+    public void Test800() {
+        // ETANT DONNE le chiffre 500
+        int chiffreArabe =800;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("DCCC", nombreRomain);
+    }
+   
 }
