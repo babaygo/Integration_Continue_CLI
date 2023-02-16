@@ -101,4 +101,14 @@ public class NombreRomainsTest {
                assertEquals("VIII", nombreRomain);
                
            }
+           @Test
+           public void Test9() {
+                // ETANT DONNE le chiffre 9
+                int chiffreArabe =9;
+                //QUAND on le convertir en nombre romain
+                String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        
+                assertEquals("IX", nombreRomain);
+                
+            }
 }
