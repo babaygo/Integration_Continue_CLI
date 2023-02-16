@@ -9,7 +9,9 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+pom.properties
+TEST-test.NombreRomainsTest.xml
+test.NombreRomainsTest.txt
 # Package Files #
 *.jar
 *.war
