@@ -21,6 +21,6 @@ public class NombreRomainsTest {
         int nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
         // ALORS on obtient un I
-        assertEquals('V', nombreRomain);
+        assertEquals('I', nombreRomain);
     }
 }
