@@ -12,6 +12,7 @@
 pom.properties
 TEST-test.NombreRomainsTest.xml
 test.NombreRomainsTest.txt
+.circleci
 # Package Files #
 *.jar
 *.war
