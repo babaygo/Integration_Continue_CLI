@@ -161,4 +161,64 @@ public class NombreRomainsTest {
                      assertEquals("XIV", nombreRomain);
                      
                  }
+                 @Test
+                 public void Test15() {
+                      // ETANT DONNE le chiffre 15
+                      int chiffreArabe =15;
+                      //QUAND on le convertir en nombre romain
+                      String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+              
+                      assertEquals("XV", nombreRomain);
+                      
+                  }
+                  @Test
+                  public void Test16() {
+                       // ETANT DONNE le chiffre 16
+                       int chiffreArabe =16;
+                       //QUAND on le convertir en nombre romain
+                       String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+               
+                       assertEquals("XVI", nombreRomain);
+                       
+                   }
+                   @Test
+                   public void Test17() {
+                        // ETANT DONNE le chiffre 17
+                        int chiffreArabe =17;
+                        //QUAND on le convertir en nombre romain
+                        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+                
+                        assertEquals("XVII", nombreRomain);
+                        
+                    }
+                    @Test
+                    public void Test18() {
+                         // ETANT DONNE le chiffre 8
+                         int chiffreArabe =18;
+                         //QUAND on le convertir en nombre romain
+                         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+                 
+                         assertEquals("XVIII", nombreRomain);
+                         
+                     }
+                     @Test
+                     public void Test19() {
+                          // ETANT DONNE le chiffre 19
+                          int chiffreArabe =19;
+                          //QUAND on le convertir en nombre romain
+                          String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+                  
+                          assertEquals("XIX", nombreRomain);
+                          
+                      }
+                      @Test
+                      public void Test20() {
+                           // ETANT DONNE le chiffre 20
+                           int chiffreArabe =20;
+                           //QUAND on le convertir en nombre romain
+                           String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+                   
+                           assertEquals("XX", nombreRomain);
+                           
+                       }
 }
