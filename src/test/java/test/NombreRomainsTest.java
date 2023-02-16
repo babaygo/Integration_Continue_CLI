@@ -348,5 +348,20 @@ public class NombreRomainsTest {
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
         assertEquals("CM", nombreRomain);
     }
-   
+    @Test
+    public void Test1000() {
+        // ETANT DONNE le chiffre 1000
+        int chiffreArabe =1000;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("M", nombreRomain);
+    }
+    @Test
+    public void Test3999() {
+        // ETANT DONNE le chiffre 3999
+        int chiffreArabe =3999;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("MMMCMXCIX", nombreRomain);
+    }
 }
