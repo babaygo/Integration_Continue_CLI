@@ -38,7 +38,7 @@ jobs:
             git fetch --all
             git checkout main
             git pull
-            git merge dev --no-edit
+            git merge origin/dev --no-edit
             git push origin
 
           when: on_success
