@@ -5,17 +5,21 @@ public class NombreRomain {
     public static String Convertir(int nombreArabe) {
         // Test qui marche
         String res = "";
-        if (nombreArabe >= 5) {
-            res += "V";
-        } else {
-            if (nombreArabe % 5 == 4) {
-                res += "IV";
+        int rest = nombreArabe;
+        do {
+            if (rest >= 5) {
+                res += "V";
+                rest -= 5;
             } else {
-                res += "I".repeat(nombreArabe);
-
+                if (rest % 5 == 4) {
+                    res += "IV";
+                    rest -= 4;
+                } else {
+                    res += "I".repeat(rest);
+                    rest -= rest;
+                }
             }
-        }
-
+        } while (rest > 0);
         return res;
     }
 }

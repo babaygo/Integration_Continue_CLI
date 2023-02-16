@@ -71,4 +71,15 @@ public class NombreRomainsTest {
             assertEquals("V", nombreRomain);
             
         }
+
+        @Test
+        public void Test6() {
+             // ETANT DONNE le chiffre 6
+             int chiffreArabe =6;
+             //QUAND on le convertir en nombre romain
+             String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+     
+             assertEquals("VI", nombreRomain);
+             
+         }
 }
