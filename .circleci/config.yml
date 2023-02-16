@@ -49,7 +49,7 @@ jobs:
             git checkout -b rejected_${CIRCLE_BUILD_NUM}
             git add .
             git commit -m "ON FAIL"
-            git push
+            git push --set-upstream origin rejected_${CIRCLE_BUILD_NUM}
             git merge rejected_${CIRCLE_BUILD_NUM}
           when: on_fail
           
