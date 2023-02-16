@@ -3,6 +3,7 @@ package nombreromain;
 
 public class NombreRomain {
     public static char Convertir(int nombreArabe) {
-        return 'I';
+        // Test qui ne marche pas (reject)
+        return 'V';
     }
 }
