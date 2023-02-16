@@ -7,20 +7,25 @@ public class NombreRomain {
         String res = "";
         int rest = nombreArabe;
         do {
-            if (rest == 9) {
-                res += "IX";
-                rest -= 9;
+            if (rest >= 10) {
+                res += "X";
+                rest -= 10;
             } else {
-                if (rest >= 5) {
-                    res += "V";
-                    rest -= 5;
+                if (rest == 9) {
+                    res += "IX";
+                    rest -= 9;
                 } else {
-                    if (rest % 5 == 4) {
-                        res += "IV";
-                        rest -= 4;
+                    if (rest >= 5) {
+                        res += "V";
+                        rest -= 5;
                     } else {
-                        res += "I".repeat(rest);
-                        rest -= rest;
+                        if (rest % 5 == 4) {
+                            res += "IV";
+                            rest -= 4;
+                        } else {
+                            res += "I".repeat(rest);
+                            rest -= rest;
+                        }
                     }
                 }
             }
