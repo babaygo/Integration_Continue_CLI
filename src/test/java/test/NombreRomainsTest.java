@@ -23,4 +23,15 @@ public class NombreRomainsTest {
         // ALORS on obtient un I
         assertEquals('I', nombreRomain);
     }
+
+        @Test
+    public void Test2() {
+         // ETANT DONNE le chiffre 2
+         int chiffreArabe =2;
+         //QUAND on le convertir en nombre romain
+         String nombreRomain = NombreRomain_I1.Convertir(chiffreArabe);
+ 
+         assertEquals("II", nombreRomain);
+         
+     }
 }
