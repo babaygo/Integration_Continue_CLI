@@ -254,14 +254,27 @@ public class NombreRomainsTest {
         assertEquals("XLIX", nombreRomain);
 
     }
+
     @Test
     public void Test50() {
-         // ETANT DONNE le chiffre 50
-         int chiffreArabe =50;
-         //QUAND on le convertir en nombre romain
-         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
- 
-         assertEquals("L", nombreRomain);
-         
-     }
+        // ETANT DONNE le chiffre 50
+        int chiffreArabe = 50;
+        // QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        assertEquals("L", nombreRomain);
+
+    }
+
+    @Test
+    public void Test99() {
+        // ETANT DONNE le chiffre 99
+        int chiffreArabe = 99;
+        // QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        assertEquals("XCIX", nombreRomain);
+
+    }
+    
 }
