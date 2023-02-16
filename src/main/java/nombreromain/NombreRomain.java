@@ -7,48 +7,53 @@ public class NombreRomain {
         String res = "";
         int rest = nombreArabe;
         do {
-            if (rest >= 500) {
-                res += "D";
-                rest -= 500;
+            if (rest >= 900) {
+                res += "CM";
+                rest -= 900;
             } else {
-                if (rest >= 400) {
-                    res += "CD";
-                    rest -= 400;
+                if (rest >= 500) {
+                    res += "D";
+                    rest -= 500;
                 } else {
-                    if (rest >= 100) {
-                        res += "C";
-                        rest -= 100;
+                    if (rest >= 400) {
+                        res += "CD";
+                        rest -= 400;
                     } else {
-                        if (rest >= 90) {
-                            res += "XC";
-                            rest -= 90;
+                        if (rest >= 100) {
+                            res += "C";
+                            rest -= 100;
                         } else {
-                            if (rest >= 50) {
-                                res += "L";
-                                rest -= 50;
+                            if (rest >= 90) {
+                                res += "XC";
+                                rest -= 90;
                             } else {
-                                if (rest >= 40) {
-                                    res += "XL";
-                                    rest -= 40;
+                                if (rest >= 50) {
+                                    res += "L";
+                                    rest -= 50;
                                 } else {
-                                    if (rest >= 10) {
-                                        res += "X";
-                                        rest -= 10;
+                                    if (rest >= 40) {
+                                        res += "XL";
+                                        rest -= 40;
                                     } else {
-                                        if (rest == 9) {
-                                            res += "IX";
-                                            rest -= 9;
+                                        if (rest >= 10) {
+                                            res += "X";
+                                            rest -= 10;
                                         } else {
-                                            if (rest >= 5) {
-                                                res += "V";
-                                                rest -= 5;
+                                            if (rest == 9) {
+                                                res += "IX";
+                                                rest -= 9;
                                             } else {
-                                                if (rest % 5 == 4) {
-                                                    res += "IV";
-                                                    rest -= 4;
+                                                if (rest >= 5) {
+                                                    res += "V";
+                                                    rest -= 5;
                                                 } else {
-                                                    res += "I".repeat(rest);
-                                                    rest -= rest;
+                                                    if (rest % 5 == 4) {
+                                                        res += "IV";
+                                                        rest -= 4;
+                                                    } else {
+                                                        res += "I".repeat(rest);
+                                                        rest -= rest;
+                                                    }
                                                 }
                                             }
                                         }

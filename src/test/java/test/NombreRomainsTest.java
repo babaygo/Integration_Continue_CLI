@@ -342,5 +342,13 @@ public class NombreRomainsTest {
         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
         assertEquals("DCCC", nombreRomain);
     }
+    @Test
+    public void Test900() {
+        // ETANT DONNE le chiffre 900
+        int chiffreArabe =900;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        assertEquals("CM", nombreRomain);
+    }
    
 }
