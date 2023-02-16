@@ -33,13 +33,10 @@ jobs:
       - run: 
           name: fast-forward
           command: |
-            git reset --hard HEAD^
             git config --global user.email "simon.laurent@epsi.fr"
             git config --global user.name "babaygo"
             git checkout main
             git merge dev
-            git commit -m "ON SUCCESS"
-            git push --set-upstream origin main
           when: on_success
 
       - run: 
