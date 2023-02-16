@@ -276,5 +276,24 @@ public class NombreRomainsTest {
         assertEquals("XCIX", nombreRomain);
 
     }
-    
+    @Test
+    public void Test100() {
+        // ETANT DONNE le chiffre 200
+        int chiffreArabe =100;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        assertEquals("C", nombreRomain);
+        
+    }
+    @Test
+    public void Test200() {
+        // ETANT DONNE le chiffre 200
+        int chiffreArabe =200;
+        //QUAND on le convertir en nombre romain
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+
+        assertEquals("CC", nombreRomain);
+        
+    }
 }
