@@ -33,6 +33,7 @@ jobs:
       - run: 
           name: fast-forward
           command: |
+            git reset --hard HEAD^
             git config --global user.email "simon.laurent@epsi.fr"
             git config --global user.name "babaygo"
             git checkout main
