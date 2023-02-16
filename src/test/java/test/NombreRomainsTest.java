@@ -1,11 +1,13 @@
 package test;
 
 import nombreromain.NombreRomain;
+
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class NombreRomainsTest {
 
@@ -18,10 +20,10 @@ public class NombreRomainsTest {
         int chiffreArabe = 1;
 
         // QUAND on le convertit en nombre romain
-        int nombreRomain = NombreRomain.Convertir(chiffreArabe);
+        String nombreRomain = NombreRomain.Convertir(chiffreArabe);
 
         // ALORS on obtient un I
-        assertEquals('I', nombreRomain);
+        assertEquals("I", nombreRomain);
     }
 
         @Test
@@ -29,7 +31,7 @@ public class NombreRomainsTest {
          // ETANT DONNE le chiffre 2
          int chiffreArabe =2;
          //QUAND on le convertir en nombre romain
-         String nombreRomain = NombreRomain_I1.Convertir(chiffreArabe);
+         String nombreRomain = NombreRomain.Convertir(chiffreArabe);
  
          assertEquals("II", nombreRomain);
          
