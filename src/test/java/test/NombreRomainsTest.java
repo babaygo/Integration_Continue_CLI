@@ -131,4 +131,34 @@ public class NombreRomainsTest {
                   assertEquals("XI", nombreRomain);
                   
               }
+              @Test
+              public void Test12() {
+                   // ETANT DONNE le chiffre 12
+                   int chiffreArabe =12;
+                   //QUAND on le convertir en nombre romain
+                   String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+           
+                   assertEquals("XII", nombreRomain);
+                   
+               }
+               @Test
+               public void Test13() {
+                    // ETANT DONNE le chiffre 13
+                    int chiffreArabe =13;
+                    //QUAND on le convertir en nombre romain
+                    String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+            
+                    assertEquals("XIII", nombreRomain);
+                    
+                }
+                @Test
+                public void Test14() {
+                     // ETANT DONNE le chiffre 14
+                     int chiffreArabe =14;
+                     //QUAND on le convertir en nombre romain
+                     String nombreRomain = NombreRomain.Convertir(chiffreArabe);
+             
+                     assertEquals("XIV", nombreRomain);
+                     
+                 }
 }
